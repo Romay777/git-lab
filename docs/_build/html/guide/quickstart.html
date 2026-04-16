@@ -1,0 +1,262 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Быстрый старт &mdash; Geolib 0.1.0</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=01f34227"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Обзор фигур" href="shapes_overview.html" />
+    <link rel="prev" title="Geolib — документация" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Geolib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Руководство пользователя</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Быстрый старт</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Установка</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Первые шаги</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">Обработка ошибок</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="shapes_overview.html">Обзор фигур</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="shapes_overview.html#id2">Двумерные фигуры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shapes_overview.html#id3">Трёхмерные тела</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Справочник API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/base.html">geolib.base — базовые классы</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../api/base.html#id1">Базовые классы и исключения (<code class="xref py py-mod docutils literal notranslate"><span class="pre">geolib.base</span></code>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/base.html#geolib.base.ShapeError"><code class="docutils literal notranslate"><span class="pre">ShapeError</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api/base.html#geolib.base.ShapeError.__init__"><code class="docutils literal notranslate"><span class="pre">ShapeError.__init__()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/base.html#geolib.base.Shape"><code class="docutils literal notranslate"><span class="pre">Shape</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api/base.html#geolib.base.Shape.area"><code class="docutils literal notranslate"><span class="pre">Shape.area()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/base.html#geolib.base.Shape.describe"><code class="docutils literal notranslate"><span class="pre">Shape.describe()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api/plane.html">geolib.plane — двумерные фигуры</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../api/plane.html#id1">Двумерные фигуры (<code class="xref py py-mod docutils literal notranslate"><span class="pre">geolib.plane</span></code>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/plane.html#geolib.plane.Circle"><code class="docutils literal notranslate"><span class="pre">Circle</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Circle.__init__"><code class="docutils literal notranslate"><span class="pre">Circle.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Circle.radius"><code class="docutils literal notranslate"><span class="pre">Circle.radius</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Circle.area"><code class="docutils literal notranslate"><span class="pre">Circle.area()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Circle.perimeter"><code class="docutils literal notranslate"><span class="pre">Circle.perimeter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Circle.describe"><code class="docutils literal notranslate"><span class="pre">Circle.describe()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/plane.html#geolib.plane.Rectangle"><code class="docutils literal notranslate"><span class="pre">Rectangle</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Rectangle.__init__"><code class="docutils literal notranslate"><span class="pre">Rectangle.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Rectangle.width"><code class="docutils literal notranslate"><span class="pre">Rectangle.width</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Rectangle.height"><code class="docutils literal notranslate"><span class="pre">Rectangle.height</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Rectangle.diagonal"><code class="docutils literal notranslate"><span class="pre">Rectangle.diagonal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Rectangle.area"><code class="docutils literal notranslate"><span class="pre">Rectangle.area()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Rectangle.perimeter"><code class="docutils literal notranslate"><span class="pre">Rectangle.perimeter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Rectangle.describe"><code class="docutils literal notranslate"><span class="pre">Rectangle.describe()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/plane.html#geolib.plane.Triangle"><code class="docutils literal notranslate"><span class="pre">Triangle</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Triangle.__init__"><code class="docutils literal notranslate"><span class="pre">Triangle.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Triangle.sides"><code class="docutils literal notranslate"><span class="pre">Triangle.sides</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Triangle.semiperimeter"><code class="docutils literal notranslate"><span class="pre">Triangle.semiperimeter</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Triangle.area"><code class="docutils literal notranslate"><span class="pre">Triangle.area()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Triangle.perimeter"><code class="docutils literal notranslate"><span class="pre">Triangle.perimeter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Triangle.is_right"><code class="docutils literal notranslate"><span class="pre">Triangle.is_right()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/plane.html#geolib.plane.Triangle.describe"><code class="docutils literal notranslate"><span class="pre">Triangle.describe()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api/solid.html">geolib.solid — трёхмерные тела</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../api/solid.html#id1">Трёхмерные тела (<code class="xref py py-mod docutils literal notranslate"><span class="pre">geolib.solid</span></code>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/solid.html#geolib.solid.Sphere"><code class="docutils literal notranslate"><span class="pre">Sphere</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Sphere.__init__"><code class="docutils literal notranslate"><span class="pre">Sphere.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Sphere.radius"><code class="docutils literal notranslate"><span class="pre">Sphere.radius</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Sphere.area"><code class="docutils literal notranslate"><span class="pre">Sphere.area()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Sphere.volume"><code class="docutils literal notranslate"><span class="pre">Sphere.volume()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Sphere.describe"><code class="docutils literal notranslate"><span class="pre">Sphere.describe()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/solid.html#geolib.solid.Cylinder"><code class="docutils literal notranslate"><span class="pre">Cylinder</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Cylinder.__init__"><code class="docutils literal notranslate"><span class="pre">Cylinder.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Cylinder.radius"><code class="docutils literal notranslate"><span class="pre">Cylinder.radius</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Cylinder.height"><code class="docutils literal notranslate"><span class="pre">Cylinder.height</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Cylinder.lateral_area"><code class="docutils literal notranslate"><span class="pre">Cylinder.lateral_area()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Cylinder.area"><code class="docutils literal notranslate"><span class="pre">Cylinder.area()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Cylinder.volume"><code class="docutils literal notranslate"><span class="pre">Cylinder.volume()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Cylinder.describe"><code class="docutils literal notranslate"><span class="pre">Cylinder.describe()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/solid.html#geolib.solid.Cuboid"><code class="docutils literal notranslate"><span class="pre">Cuboid</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Cuboid.__init__"><code class="docutils literal notranslate"><span class="pre">Cuboid.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Cuboid.width"><code class="docutils literal notranslate"><span class="pre">Cuboid.width</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Cuboid.height"><code class="docutils literal notranslate"><span class="pre">Cuboid.height</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Cuboid.depth"><code class="docutils literal notranslate"><span class="pre">Cuboid.depth</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Cuboid.space_diagonal"><code class="docutils literal notranslate"><span class="pre">Cuboid.space_diagonal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Cuboid.area"><code class="docutils literal notranslate"><span class="pre">Cuboid.area()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Cuboid.volume"><code class="docutils literal notranslate"><span class="pre">Cuboid.volume()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/solid.html#geolib.solid.Cuboid.describe"><code class="docutils literal notranslate"><span class="pre">Cuboid.describe()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Прочее</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">История изменений</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog.html#id2">0.1.0 (2026-04-09)</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Geolib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Быстрый старт</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/guide/quickstart.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="quickstart">
+<span id="id1"></span><h1>Быстрый старт<a class="headerlink" href="#quickstart" title="Link to this heading"></a></h1>
+<section id="id2">
+<h2>Установка<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>add<span class="w"> </span>geolib
+</pre></div>
+</div>
+<p>Или для разработки (с зависимостями документации):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>sync<span class="w"> </span>--extra<span class="w"> </span>docs
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>Первые шаги<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<p>Создайте фигуру и вычислите её свойства:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">geolib.plane</span><span class="w"> </span><span class="kn">import</span> <span class="n">Circle</span><span class="p">,</span> <span class="n">Rectangle</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geolib.solid</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sphere</span>
+
+<span class="c1"># Круг радиуса 5</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">area</span><span class="p">())</span>       <span class="c1"># 78.539816</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">perimeter</span><span class="p">())</span>  <span class="c1"># 31.415927</span>
+
+<span class="c1"># Прямоугольник 4×6</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">area</span><span class="p">())</span>       <span class="c1"># 24</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">diagonal</span><span class="p">)</span>     <span class="c1"># 7.211103</span>
+
+<span class="c1"># Шар радиуса 3</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">Sphere</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">volume</span><span class="p">())</span>     <span class="c1"># 113.097336</span>
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h2>Обработка ошибок<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<p>При передаче некорректных параметров бросается
+<a class="reference internal" href="../api/base.html#geolib.base.ShapeError" title="geolib.base.ShapeError"><code class="xref py py-class docutils literal notranslate"><span class="pre">geolib.base.ShapeError</span></code></a>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">geolib.base</span><span class="w"> </span><span class="kn">import</span> <span class="n">ShapeError</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geolib.plane</span><span class="w"> </span><span class="kn">import</span> <span class="n">Circle</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">bad</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">ShapeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>  <span class="c1"># radius — должно быть &gt; 0, получено -1</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference internal" href="../api/base.html#geolib.base.ShapeError" title="geolib.base.ShapeError"><code class="xref py py-class docutils literal notranslate"><span class="pre">ShapeError</span></code></a> наследует <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ValueError</span></code></a>,
+поэтому его можно перехватывать обоими именами.</p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="shapes_overview.html#shapes-overview"><span class="std std-ref">Обзор фигур</span></a> — подробный обзор всех фигур.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Geolib — документация" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="shapes_overview.html" class="btn btn-neutral float-right" title="Обзор фигур" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Geolib Contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

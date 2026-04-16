@@ -1,0 +1,64 @@
+.. _quickstart:
+
+Быстрый старт
+=============
+
+Установка
+---------
+
+.. code-block:: bash
+
+    uv add geolib
+
+Или для разработки (с зависимостями документации):
+
+.. code-block:: bash
+
+    uv sync --extra docs
+
+Первые шаги
+-----------
+
+Создайте фигуру и вычислите её свойства:
+
+.. code-block:: python
+
+    from geolib.plane import Circle, Rectangle
+    from geolib.solid import Sphere
+
+    # Круг радиуса 5
+    c = Circle(radius=5)
+    print(c.area())       # 78.539816
+    print(c.perimeter())  # 31.415927
+
+    # Прямоугольник 4×6
+    r = Rectangle(4, 6)
+    print(r.area())       # 24
+    print(r.diagonal)     # 7.211103
+
+    # Шар радиуса 3
+    s = Sphere(3)
+    print(s.volume())     # 113.097336
+
+Обработка ошибок
+----------------
+
+При передаче некорректных параметров бросается
+:class:`geolib.base.ShapeError`:
+
+.. code-block:: python
+
+    from geolib.base import ShapeError
+    from geolib.plane import Circle
+
+    try:
+        bad = Circle(radius=-1)
+    except ShapeError as e:
+        print(e)  # radius — должно быть > 0, получено -1
+
+.. note::
+    :class:`~geolib.base.ShapeError` наследует :class:`ValueError`,
+    поэтому его можно перехватывать обоими именами.
+
+.. seealso::
+    :ref:`shapes_overview` — подробный обзор всех фигур.
